@@ -17,6 +17,8 @@ body{
     color: rgb(255, 198, 0);
 }
 
+$main-block-width: 1198px;
+
 @import "blocks/fonts.scss";
 @import "blocks/header.scss";
 @import "blocks/main.scss";
