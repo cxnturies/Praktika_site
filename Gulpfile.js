@@ -16,7 +16,7 @@ function sync() {
         server: {
             baseDir: "build"
         },
-        files: "build/**/*.*"
+        injectChanges: true
     });
 }
 
@@ -32,7 +32,8 @@ function cleanBuild(cb) {
 function buildStyles() {
     return gulp.src("source/style.scss")
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('build/'));
+        .pipe(gulp.dest('build/'))
+        .pipe(browserSync.stream({match: '**/*.css'}));
 }
 
 function cleanStyles(cb) {
@@ -42,7 +43,8 @@ function cleanStyles(cb) {
 function buildHtml() {
     return gulp.src("source/*.pug")
         .pipe(pug())
-        .pipe(gulp.dest("build/"));
+        .pipe(gulp.dest("build/"))
+        .pipe(browserSync.stream({match: '**/*.html'}));
 }
 
 function cleanHtml(cb) {
@@ -51,7 +53,8 @@ function cleanHtml(cb) {
 
 function copyImages() {
     return gulp.src("source/img/*.*")
-        .pipe(gulp.dest("build/img"));
+        .pipe(gulp.dest("build/img"))
+        .pipe(browserSync.stream({match: 'img/*.*'}));
 }
 
 function cleanImages(cb) {
@@ -60,7 +63,8 @@ function cleanImages(cb) {
 
 function copyFonts() {
     return gulp.src("source/fonts/*.*")
-        .pipe(gulp.dest("build/fonts"));
+        .pipe(gulp.dest("build/fonts"))
+        .pipe(browserSync.stream({match: 'fonts/*.*'}));
 }
 
 function cleanFonts(cb) {
