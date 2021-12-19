@@ -8,6 +8,7 @@
             width: 550px;
             padding-top: 35px;
             padding-left: 95px;
+            position: relative;
 
             h3{
                 font-size: 32px;
@@ -20,12 +21,32 @@
                 font-size: 80px;
                 font-family: "MyriadPro";
                 color: #000000;
-                line-height: 1.2;
                 font-weight: normal;
+                position: relative;
+
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 133px;
+                    height: 1px;
+                    background-color: #c5c5c5;
+                    left: 160px;
+                    bottom: 20px;
+                }
             }
             .uppercase{
                 font-size: 50px;
                 font-weight: bold;
+            }
+
+            &:after{
+                content: "";
+                background-color: #c5c5c5;
+                position: absolute;
+                height: 133px;
+                width: 1px;
+                left: 100%;
+                top: 6px;
             }
         }
         .text__right{
