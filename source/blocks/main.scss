@@ -1,0 +1,8 @@
+main{
+    background-color: #ffffff;
+    width: $main-block-width;
+    margin: 0 auto;
+
+    @import "about.scss"
+}
+

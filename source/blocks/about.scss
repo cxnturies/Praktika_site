@@ -1,0 +1,53 @@
+.about{
+    padding-top: 35px;
+
+    &__top{
+        display: flex;
+
+        .text__left{
+            width: 550px;
+            padding-top: 35px;
+            padding-left: 95px;
+
+            h3{
+                font-size: 32px;
+                font-family: "MyriadPro";
+                color: rgb(113, 113, 113);
+                line-height: 0.4;
+                font-weight: normal;
+            }
+            h1 {
+                font-size: 80px;
+                font-family: "MyriadPro";
+                color: #000000;
+                line-height: 1.2;
+                font-weight: normal;
+            }
+            .uppercase{
+                font-size: 50px;
+                font-weight: bold;
+            }
+        }
+        .text__right{
+            padding-left: 21px;
+
+            h4{
+                font-size: 16px;
+                font-family: "MyriadPro";
+                color: rgb(0, 0, 0);
+                font-style: italic;
+                line-height: 1.2;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            p{
+                font-size: 14px;
+                font-family: "MyriadPro";
+                color: #636363;
+                line-height: 1.2;
+                font-weight: 400;
+            }
+        }
+    }
+}
