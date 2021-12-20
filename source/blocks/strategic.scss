@@ -33,7 +33,7 @@
         display: flex;
         flex-flow: row wrap;
 
-        .image {
+        & > * {
             height: 288px;
             width: 430px;
         }
@@ -48,6 +48,48 @@
         #img3{
             background-image: url("img/Layer 24.png");
             background-position: right top;
+        }
+
+        .text{
+            padding: 25px 0 0 35px;
+            h2{
+                font-size: 32px;
+                font-family: "MyriadPro";
+                font-weight: normal;
+                color: rgb(29, 29, 29);
+                line-height: 1.2;
+                margin-bottom: 20px;
+            }
+            .uppercase{
+                font-size: 50px;
+                font-weight: bold;
+            }
+
+            &__top{
+                font-size: 16px;
+                font-family: "MyriadPro";
+                color: rgb(0, 0, 0);
+                font-style: italic;
+                line-height: 1.2;
+            }
+            &__bottom{
+                margin-top: 20px;
+                font-size: 12px;
+                font-family: "MyriadPro";
+                color: #636363;
+                line-height: 1.2;
+            }
+        }
+        #text-overflow{
+            width: 520px;
+        }
+
+        .block__left{
+            margin-left: auto;
+        }
+
+        .block__right{
+            margin-right: auto;
         }
     }
 }
