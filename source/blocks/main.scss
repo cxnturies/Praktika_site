@@ -3,6 +3,7 @@ main{
     width: $main-block-width;
     margin: 0 auto;
 
-    @import "about.scss"
+    @import "about.scss";
+    @import "featured.scss";
 }
 
