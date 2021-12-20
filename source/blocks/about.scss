@@ -71,4 +71,42 @@
             }
         }
     }
+
+    &__bottom{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 70px;
+
+        .about__point{
+            text-align: center;
+
+            .logo{
+                background: url("img/joystick.png") center no-repeat;
+                height: 58px;
+                width: 58px;
+                margin: 0 auto;
+                padding: 19px;
+                background-color: #e8e8e8;
+                border: 3px solid #ffa800;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+
+            h3{
+                font-size: 18px;
+                font-family: "MyriadPro";
+                color: rgb(0, 0, 0);
+                line-height: 1.2;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 10px;
+                font-family: "MyriadPro";
+                color: rgb(0, 0, 0);
+                font-style: italic;
+                line-height: 1.2;
+                margin-bottom: 15px;
+            }
+        }
+    }
 }
