@@ -1,0 +1,56 @@
+.our-team{
+    display: flex;
+    padding-top: 85px;
+    padding-left: 50px;
+    padding-right: 70px;
+    justify-content: space-between;
+    height: 585px;
+
+    h1{
+        font-family: "MyriadPro";
+        font-size: 32px;
+    }
+    .uppercase{
+        font-size: 50px;
+    }
+
+    .block__right{
+        .text__top{
+            font-size: 16px;
+            font-family: "MyriadPro";
+            color: rgb(0, 0, 0);
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .text__bottom{
+            font-size: 12px;
+            font-family: "MyriadPro";
+            color: #636363;
+            margin-bottom: 30px;
+        }
+
+        .team{
+            display: flex;
+
+            .worker{
+                text-align: center;
+
+                &:not(:last-child){
+                    margin-right: 16px;
+                }
+                .name{
+                    margin-top: 16px;
+                    font-size: 16px;
+                    font-family: "MyriadPro";
+                    color: rgb(0, 0, 0);
+                }
+                .position{
+                    font-size: 16px;
+                    font-style: italic;
+                    font-family: "MyriadPro";
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+    }
+}

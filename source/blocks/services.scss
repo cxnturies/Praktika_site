@@ -1,0 +1,40 @@
+.services{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 478px;
+    background: url("img/Layer 26.png") center,
+                url("img/Layer 25.png");
+
+    h1{
+        font-size: 32px;
+        font-family: "MyriadPro";
+        color: #ffffff;
+        line-height: 1.2;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    .uppercase{
+        font-size: 50px;
+    }
+
+    .block__right{
+        padding: 130px 165px 55px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 865px;
+        padding-right: 50px;
+        color: #ffffff;
+
+        h3{
+            font-size: 18px;
+            font-family: "MyriadPro";
+            margin-bottom: 25px;
+        }
+        p{
+            font-size: 11px;
+            font-family: "MyriadPro";
+        }
+    }
+}

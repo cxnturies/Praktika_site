@@ -1,0 +1,61 @@
+.blogs{
+    height: 545px;
+    padding-left: 55px;
+    padding-top: 60px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    h1{
+        font-size: 32px;
+        font-family: "MyriadPro";
+    }
+    .uppercase{
+        font-size: 50px;
+    }
+
+    nav ul{
+        padding-top: 52px;
+        padding-left: 85px;
+        list-style: none;
+
+        li{
+            font-size: 18px;
+            font-family: "MyriadPro";
+
+            &:not(:first-child){
+                margin-top: 28px;
+            }
+        }
+        .nav-current{
+            color: rgb(255, 198, 0);
+        }
+    }
+
+    .block__right{
+        display: flex;
+
+        .item{
+            &:not(:first-child){
+                margin-left: 84px;
+            }
+            .date{
+                font-size: 18px;
+                font-family: "MyriadPro";
+                color: rgb(255, 198, 0);
+                margin-top: 4px;
+            }
+            h6{
+                font-size: 16px;
+                font-family: "MyriadPro";
+                margin-top: 20px;
+            }
+            p{
+                font-size: 12px;
+                font-style: italic;
+                font-family: "MyriadPro";
+                margin-top: 10px;
+            }
+        }
+    }
+}
