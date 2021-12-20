@@ -27,4 +27,27 @@
         color: #636363;
         line-height: 1.2;
     }
+
+    &__bottom{
+        margin-top: 43px;
+        display: flex;
+        flex-flow: row wrap;
+
+        .image {
+            height: 288px;
+            width: 430px;
+        }
+
+        #img1{
+            background-image: url("img/Layer 22.png");
+            background-position: right top;
+        }
+        #img2{
+            background-image: url("img/Layer 23.png");
+        }
+        #img3{
+            background-image: url("img/Layer 24.png");
+            background-position: right top;
+        }
+    }
 }
