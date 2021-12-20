@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    heigth: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #161616;
+}
+
+.highlight{
+    color: rgb(255, 198, 0);
+}
+
+$main-block-width: 1198px;
+
+@import "blocks/fonts.scss";
+@import "blocks/header.scss";
+@import "blocks/main.scss";

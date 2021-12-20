@@ -1,0 +1,113 @@
+.about{
+    padding-top: 35px;
+    padding-bottom: 100px;
+
+    &__top{
+        display: flex;
+
+        .text__left{
+            width: 550px;
+            padding-top: 35px;
+            padding-left: 95px;
+            position: relative;
+
+            h3{
+                font-size: 32px;
+                font-family: "MyriadPro";
+                color: rgb(113, 113, 113);
+                line-height: 0.4;
+                font-weight: normal;
+            }
+            h1 {
+                font-size: 80px;
+                font-family: "MyriadPro";
+                color: #000000;
+                font-weight: normal;
+                position: relative;
+
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 133px;
+                    height: 1px;
+                    background-color: #c5c5c5;
+                    left: 160px;
+                    bottom: 20px;
+                }
+            }
+            .uppercase{
+                font-size: 50px;
+                font-weight: bold;
+            }
+
+            &:after{
+                content: "";
+                background-color: #c5c5c5;
+                position: absolute;
+                height: 133px;
+                width: 1px;
+                left: 100%;
+                top: 6px;
+            }
+        }
+        .text__right{
+            padding-left: 21px;
+
+            h4{
+                font-size: 16px;
+                font-family: "MyriadPro";
+                color: rgb(0, 0, 0);
+                font-style: italic;
+                line-height: 1.2;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            p{
+                font-size: 14px;
+                font-family: "MyriadPro";
+                color: #636363;
+                line-height: 1.2;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__bottom{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 70px;
+
+        .about__point{
+            text-align: center;
+
+            .logo{
+                background: url("img/joystick.png") center no-repeat;
+                height: 58px;
+                width: 58px;
+                margin: 0 auto;
+                padding: 19px;
+                background-color: #e8e8e8;
+                border: 3px solid #ffa800;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+
+            h3{
+                font-size: 18px;
+                font-family: "MyriadPro";
+                color: rgb(0, 0, 0);
+                line-height: 1.2;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 10px;
+                font-family: "MyriadPro";
+                color: rgb(0, 0, 0);
+                font-style: italic;
+                line-height: 1.2;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

@@ -16,7 +16,7 @@ function sync() {
         server: {
             baseDir: "build"
         },
-        files: "build/**/*.*"
+        injectChanges: true
     });
 }
 
@@ -30,19 +30,21 @@ function cleanBuild(cb) {
 }
 
 function buildStyles() {
-    return gulp.src("src/style/sass/**/style.sass")
+    return gulp.src("source/style.scss")
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('build/style/'));
+        .pipe(gulp.dest('build/'))
+        .pipe(browserSync.stream({match: '**/*.css'}));
 }
 
 function cleanStyles(cb) {
-    rimraf("build/style", cb);
+    rimraf("build/style.css", cb);
 }
 
 function buildHtml() {
-    return gulp.src("src/**/index.pug")
+    return gulp.src("source/*.pug")
         .pipe(pug())
-        .pipe(gulp.dest("build/"));
+        .pipe(gulp.dest("build/"))
+        .pipe(browserSync.stream({match: '**/*.html'}));
 }
 
 function cleanHtml(cb) {
@@ -50,8 +52,9 @@ function cleanHtml(cb) {
 }
 
 function copyImages() {
-    return gulp.src("src/img/*.*")
-        .pipe(gulp.dest("build/img"));
+    return gulp.src("source/img/*.*")
+        .pipe(gulp.dest("build/img"))
+        .pipe(browserSync.stream({match: 'img/*.*'}));
 }
 
 function cleanImages(cb) {
@@ -59,8 +62,9 @@ function cleanImages(cb) {
 }
 
 function copyFonts() {
-    return gulp.src("src/fonts/*.*")
-        .pipe(gulp.dest("build/fonts"));
+    return gulp.src("source/fonts/*.*")
+        .pipe(gulp.dest("build/fonts"))
+        .pipe(browserSync.stream({match: 'fonts/*.*'}));
 }
 
 function cleanFonts(cb) {
@@ -68,8 +72,8 @@ function cleanFonts(cb) {
 }
 
 function watchSrc() {
-    watch("src/img/*.*",  series(cleanImages, copyImages));
-    watch("src/fonts/*.*",  series(cleanFonts, copyFonts));
-    watch("src/**/*.pug", series(cleanHtml, buildHtml));
-    watch("src/style/sass/**/*.sass", series(cleanStyles, buildStyles));
+    watch("source/img/*.*",  series(cleanImages, copyImages));
+    watch("source/fonts/*.*",  series(cleanFonts, copyFonts));
+    watch("source/**/*.pug", series(cleanHtml, buildHtml));
+    watch("source/**/*.scss", series(cleanStyles, buildStyles));
 }
