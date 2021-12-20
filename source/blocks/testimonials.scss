@@ -1,0 +1,57 @@
+.testimonials{
+    height: 419px;
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 55px;
+    padding-left: 50px;
+
+    h1{
+        font-size: 32px;
+        font-family: "MyriadPro";
+    }
+    .uppercase{
+        font-size: 50px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        .block__left{
+            font-size: 16px;
+            font-family: "MyriadPro";
+            padding-left: 40px;
+
+            p{
+                margin-top: 20px;
+            }
+
+            .text__top{
+                margin-top: 45px;
+                font-style: italic;
+                font-size: 16px;
+            }
+            .text__bottom{
+                font-size: 14px;
+            }
+        }
+        .block__right{
+            text-align: center;
+            padding-right: 220px;
+
+            img{
+                border: 3px solid #ffa800;
+                border-radius: 50%;
+            }
+            .name{
+                margin-top: 16px;
+                font-size: 16px;
+                font-family: "MyriadPro";
+            }
+            .position{
+                font-size: 16px;
+                font-style: italic;
+                font-family: "MyriadPro";
+            }
+        }
+    }
+}
