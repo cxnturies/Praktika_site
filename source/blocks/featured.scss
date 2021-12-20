@@ -46,4 +46,15 @@
             }
         }
     }
+    &__bottom{
+        display: flex;
+        flex-flow: row wrap;
+
+        img{
+            display: block;
+            width: 300px;
+            height: 267px;
+            margin-left: -1px;
+        }
+    }
 }
